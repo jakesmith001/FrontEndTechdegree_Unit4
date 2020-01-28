@@ -2,33 +2,62 @@
 /*              Buttons                          */
 /* ============================================= */
 
-.btn {
-    margin-top: 15px;
-    width: 100%;
-    color: #fff;
-    border: none;
-    padding: 10px 0;
-    text-transform: uppercase;
-    border-radius: 5px;
-  }
+.btn{
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
   
-  .default {
-    background-color: #51ddfc;
+.default {
+  background-color: $blue-teal;
+  transition: background-color $short-trans ease-in-out;
+
+  &:hover {
+    background-color: lighten($blue-teal, 15%)
   }
-  
-  .error {
-    background-color: #e4757a;
+}
+
+.error {
+  background-color: $light-red;
+
+  transition: background-color $short-trans ease-in-out;
+
+  &:hover {
+    background-color: lighten($light-red, 15%)
   }
-  
-  .info {
-    background-color: #927bc1;
+}
+
+.info {
+  background-color: $light-purple;
+
+  transition: background-color $short-trans ease-in-out;
+
+  &:hover {
+    background-color: lighten($light-purple, 15%)
   }
-  
-  .success {
-    background-color: #63cc82;
+}
+
+.success {
+  background-color: $light-green;
+
+  transition: background-color $short-trans ease-in-out;
+
+  &:hover {
+    background-color: lighten($light-green, 15%)
   }
-  
-  .warning {
-    background-color: #fd7856;
+}
+
+.warning {
+  background-color: $light-orange;
+
+  transition: background-color $short-trans ease-in-out;
+
+  &:hover {
+    background-color: lighten($light-orange, 15%)
   }
+}
   
